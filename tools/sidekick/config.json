@@ -1,68 +1,18 @@
 {
-    "plugins": [
-        {
-            "id": "google-asssist",
-            "title": "Google Assist",
-            "environments": [
-                "edit",
-                "dev",
-                "live",
-                "preview",
-                "prod"
-            ],
-            "url": "https://www.google.com",
-            "passConfig": true,
-            "passReferrer": true,
-            "excludePaths": [
-                "**/fr/**"
-            ],
-            "includePaths": [
-                "**.dockx**",
-                "**/fr/blocks/**"
-            ],
-            "isPalette": true,
-            "paletteRect": {
-                "top": "50px",
-                "bottom": "10px",
-                "right": "10px",
-                "left": "10px"
-            }
-        },
-        {
-            "id": "tools",
-            "title": "Tools",
-            "isContaner": true
-        },
-        {
-            "containerId": "tools",
-            "id": "localize",
-            "title": "Localize",
-            "environments": [
-                "edit",
-                "dev",
-                "live",
-                "preview",
-                "prod"
-            ],
-            "url": "https://localizejs.com",
-            "passReferrer": true
-        },
-
-        {
-            "containerId": "tools",
-            "id": "gtm",
-            "title": "GTM",
-            "environments": [
-                "edit",
-                "dev",
-                "live",
-                "preview",
-                "prod"
-            ],
-            "url": "https://tagmanager.google.com",
-            "passReferrer": true
-        }
-
-
-    ]
+  "project": "Geeks franklin",
+  "plugins": [
+    {
+      "id": "asset-library",
+      "title": "My Assets",
+      "environments": [
+        "edit"
+      ],
+      "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/franklin/asset-selector.html",
+      "isPalette": true,
+      "includePaths": [
+        "**.docx**"
+      ],
+      "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:400px; height: calc(100vh - 60px)"
+    }
+  ]
 }
